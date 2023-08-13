@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(3,9,30,0.7),rgba(3,9,30,0.7)),url(kamaraj.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    font-size: 20px;
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{ 
+    color: azure;
+    text-decoration: none;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(27, 4, 161);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box h1:hover{
+    color:rgb(27, 4, 161) ;
+    transition: 1s;
+}
+.bt{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.bt:hover{
+    border:1px solid rgb(27, 4, 161);
+    background: rgb(27, 4, 161);
+    transition: 1s;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(27, 4, 161);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+.course{
+    width: 80%;
+    /* height: 50px; */
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.cc p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between ;
+}
+.cc{
+    flex-basis: 31%;
+    background: rgb(27, 4, 161);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.space2{
+    height: 30px;
+    width: 30px;
+}
+h2{
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.cc:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.9);
+}
+.vision{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.v p{
+    color: white;
+}
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between ;
+}
+.v{
+    flex-basis: 31%;
+    background: rgb(27, 4, 161);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.footer{
+    background-color:rgb(27, 4, 161) ;
+    text-align: center;
+}
+.footer p{
+    font-size: 100%;
+    color: white;
+}
+.footlogo{
+    margin-bottom: 0.1px;
+    height: 100px;
+    width: 100px;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(3,9,30,0.7),rgba(3,9,30,0.7)),url(infra1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.abt{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.abt-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.abt-col img{
+    width: 100%;
+}
+.abt-col p{
+    color: black;
+    padding: 15px 0 25px;
+}
+.abt-col h1{
+    padding-top: 0;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-color: rgb(27, 4, 161);
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row2{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between ;
+}
+.con{
+    flex-basis: 31%;
+    border-style: dashed;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.con:hover{
+    box-shadow:  10px 20px rgb(27, 4, 161);
+}
+.video{
+    margin: auto;
+    padding: 80px 0;
+    background-position: center;
+}
+.dep{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.dep-col{
+    flex-basis: 31%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    text-align: center;
+    border-style: groove;
+    background-color: rgb(27, 4, 161);
+}
+.dep-col img{
+    width: 100%;
+    border-radius: 15px;
+}
+.dep-col h3{
+    color: wheat;
+}
+.su-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(3,9,30,0.7),rgba(3,9,30,0.7)),url(ITlab.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.su-header h1{
+    margin-top: 100px;
+}
+.itfooter{
+    background-color:rgb(27, 4, 161) ;
+    text-align: center;
+    width: auto;
+
+}
+.itfooter p{
+    font-size: 100%;
+    color: white;
+}
+.itfootlogo{
+    margin-bottom: 0.1px;
+    height: 100px;
+    width: 100px;
+}
+.left{
+    background-color: rgb(27, 4, 161);
+    height: 400px;
+    width: 150px;
+    float: left;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.left ul li a{
+    color: white;
+    font-size: 15px;
+}
+.main img{
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+.depfa-col{
+    margin-left: 80px;
+    margin-right: 80px;
+    flex-basis: 30%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    text-align: center;
+    border-style: groove;
+    background-color: rgb(27, 4, 161);
+}
+.depfa-col img{
+    width: 40%;
+    border-radius: 15px;
+}
+.depfa-col h3{
+    color: wheat;
+}
+.depfac-col{
+    margin-left: 80px;
+    margin-right: 80px;
+    flex-basis: 30%;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    text-align: center;
+    border-style: groove;
+    background-color: rgb(27, 4, 161);
+    
+}
+
+.depfac-col img{
+    width: 40%;
+    border-radius: 15px;
+}
+.depfac-col h3{
+    color: wheat;
+}
+.button{
+    width: 70px;
+    height: 30px;
+}
